@@ -1,0 +1,68 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.hypothesis/
+
+# Virtual environments and local Python setup
+.env
+.env.*
+.venv/
+venv/
+env/
+ENV/
+.python-version
+pip-wheel-metadata/
+
+# Build and packaging artifacts
+build/
+dist/
+site/
+*.egg-info/
+.eggs/
+
+# Notebook and coverage artifacts
+.ipynb_checkpoints/
+.coverage
+.coverage.*
+htmlcov/
+
+# Training / experiment outputs
+output/
+outputs/
+runs/
+wandb/
+tb_logs/
+tensorboard/
+lightning_logs/
+checkpoints/
+results/
+logs/
+*.log
+nohup.out
+
+# Model weights and large artifacts
+*.ckpt
+*.pth
+*.pt
+*.bin
+*.safetensors
+*.onnx
+
+# Archives often produced by evaluation/export
+*.zip
+*.tar
+*.tar.gz
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
