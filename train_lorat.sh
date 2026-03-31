@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 
 export CUDA_DEVICE_ORDER=PCI_BUS_ID
-export CUDA_VISIBLE_DEVICES=3,4,5
+export CUDA_VISIBLE_DEVICES=0,4,5
 export TRITON_PTXAS_PATH=/usr/local/cuda/bin/ptxas
 export NCCL_P2P_DISABLE=1
 export CUBLAS_WORKSPACE_CONFIG=:4096:8
 
 GPU_NUM=3 
 output_dir="./output/lorat_new_2"
-weight_path="/mnt/disk1/qyh/LoRAT-Unaligned_new/pretrained_models/base.bin"
+weight_path="/mnt/disk1/qyh/LoRAT-Unaligned_time1_pass/pretrained_models/base.bin"
 timestamp=$(date +"%Y.%m.%d-%H.%M.%S")
 
 mkdir -p "$output_dir"
